@@ -13,10 +13,10 @@ const SidebarSmall = (props) => {
     concManagementPath = concManagementPath.pathnameBase;
   }
 
-  // loan Path
-  let loanPath = matchPath("/loan/*", path);
-  if (loanPath) {
-    loanPath = loanPath.pathnameBase;
+  // report Path
+  let reportPath = matchPath("/report/*", path);
+  if (reportPath) {
+    reportPath = reportPath.pathnameBase;
   }
 
   const activeLink = (arr) => {
@@ -26,7 +26,7 @@ const SidebarSmall = (props) => {
     if (arr === concManagementPath) {
       return "activeTab";
     }
-    if (arr === loanPath) {
+    if (arr === reportPath) {
       return "activeTab";
     } else {
       return "";
@@ -195,7 +195,10 @@ const SidebarSmall = (props) => {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link
+              to="/report/transaction-report"
+              className={activeLink("/report/transaction-report")}
+            >
               <span className="subMenuLeft">
                 <span className="icon-vertical-line"></span>
               </span>
@@ -835,9 +838,11 @@ const SidebarSmall = (props) => {
           overlay={reportsPopover}
           rootClose
         >
-          <span className="sidebarIconSize icon-Reports">
-            {/* icon-master Small Icon */}
-          </span>
+          <div className={activeLink("/report")}>
+            <span className="sidebarIconSize icon-Reports">
+              {/* icon-master Small Icon */}
+            </span>
+          </div>
         </OverlayTrigger>
       </div>
 

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?q58spq');
-  src:  url('fonts/icomoon.eot?q58spq#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?q58spq') format('truetype'),
-    url('fonts/icomoon.woff?q58spq') format('woff'),
-    url('fonts/icomoon.svg?q58spq#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?4xvorq');
+  src:  url('fonts/icomoon.eot?4xvorq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4xvorq') format('truetype'),
+    url('fonts/icomoon.woff?4xvorq') format('woff'),
+    url('fonts/icomoon.svg?4xvorq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Minus:before {
+  content: "\e916";
+  color: #fff;
+}
+.icon-Plus:before {
+  content: "\e917";
+  color: #fff;
+}
 .icon-admin-management:before {
   content: "\e900";
   color: var(--color-primary-default);
@@ -47,8 +55,8 @@
 }
 .icon-Hamburger-Menu:before {
   content: "\e905";
-    color: var(--color-black);
-      font-size: 24px;
+  font-size: 24px;
+  color: var(--color-black);
 }
 .icon-Home:before {
   content: "\e906";

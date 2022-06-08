@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Components
 
 import ConcessionaireRegistration from "../pages/ConcessionaireRegistration";
+import TransactionReport from "../pages/TransactionReport";
 
 const router = () => {
   return (
@@ -10,6 +11,7 @@ const router = () => {
       <Routes>
         <Route path="/" element={<ConcessionaireRegistration />} />
         <Route path="/concessionaire-management/registration" element={<ConcessionaireRegistration />} />
+        <Route path="/report/transaction-report" element={<TransactionReport />} />
       </Routes>
     </BrowserRouter>
   );

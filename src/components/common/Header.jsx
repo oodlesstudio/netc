@@ -170,7 +170,7 @@ const Header = () => {
             <img src={logoLeft} alt="Logo" />
           </OverlayTrigger>
         </div>
-        <p className="fontSize14 sessionTime">
+        <p className="fontSize14">
           Session Time: <span className="fontSize14-sb">59:12</span>
         </p>
 

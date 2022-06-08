@@ -14,10 +14,10 @@ const SideBar = (props) => {
     concManagementPath = concManagementPath.pathnameBase;
   }
 
-  // loan Path
-  let loanPath = matchPath("/loan/*", path);
-  if (loanPath) {
-    loanPath = loanPath.pathnameBase;
+  // report Path
+  let reportPath = matchPath("/report/*", path);
+  if (reportPath) {
+    reportPath = reportPath.pathnameBase;
   }
 
   // route Re-Direct
@@ -42,7 +42,7 @@ const SideBar = (props) => {
     if (arr === concManagementPath) {
       return "accordion-button";
     }
-    if (arr === loanPath) {
+    if (arr === reportPath) {
       return "accordion-button";
     } else {
       return "accordion-button collapsed";
@@ -55,7 +55,7 @@ const SideBar = (props) => {
     if (arr === concManagementPath) {
       return "true";
     }
-    if (arr === loanPath) {
+    if (arr === reportPath) {
       return "true";
     } else {
       return "false";
@@ -68,7 +68,7 @@ const SideBar = (props) => {
     if (arr === concManagementPath) {
       return "accordion-collapse collapse show";
     }
-    if (arr === loanPath) {
+    if (arr === reportPath) {
       return "accordion-collapse collapse show";
     } else {
       return "accordion-collapse collapse ";
@@ -308,11 +308,11 @@ const SideBar = (props) => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingReports">
             <button
-              className={activeBtnClass("/dummy-text")}
+              className={activeBtnClass("/report")}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseReports"
-              aria-expanded={activeAriaExpand("/dummy-text")}
+              aria-expanded={activeAriaExpand("/report")}
               aria-controls="collapseReports"
             >
               <span className="sidebarIconSize icon-Reports"></span>
@@ -321,7 +321,7 @@ const SideBar = (props) => {
           </h2>
           <div
             id="collapseReports"
-            className={activeAccordionBodyClass("/dummy-text")}
+            className={activeAccordionBodyClass("/report")}
             aria-labelledby="headingReports"
             data-bs-parent="#accordionExample"
           >
@@ -346,7 +346,10 @@ const SideBar = (props) => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/dummy-text">
+                  <Link
+                    to="/report/transaction-report"
+                    className={activeLink("/report/transaction-report")}
+                  >
                     <span className="subMenuLeft">
                       <span className="icon-vertical-line"></span>
                     </span>
