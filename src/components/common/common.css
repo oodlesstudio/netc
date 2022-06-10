@@ -233,7 +233,20 @@
     display: block;
   }
 }
+
+
+.sessionTime{
+  margin-left: 16px;
+  width: 130px;
+}
+
+
 @media (max-width: 767px) {
+.sessionTime {
+    margin-left: 0px;
+    width: initial;
+  }
+
   .headerBox {
     height: 88px;
   }

@@ -19,6 +19,12 @@ const SidebarSmall = (props) => {
     reportPath = reportPath.pathnameBase;
   }
 
+  // pass management Path
+  let passManagementPath = matchPath("/pass-management/*", path);
+  if (passManagementPath) {
+    passManagementPath = passManagementPath.pathnameBase;
+  }
+
   const activeLink = (arr) => {
     if (arr === path) {
       return "activeTab";
@@ -27,6 +33,9 @@ const SidebarSmall = (props) => {
       return "activeTab";
     }
     if (arr === reportPath) {
+      return "activeTab";
+    }
+    if (arr === passManagementPath) {
       return "activeTab";
     } else {
       return "";
@@ -573,7 +582,10 @@ const SidebarSmall = (props) => {
       <Popover.Body>
         <ul className="subMenu">
           <li>
-            <Link to="/">
+            <Link
+              to="/pass-management/issue-pass"
+              className={activeLink("/pass-management/issue-pass")}
+            >
               <span className="subMenuLeft">
                 <span className="icon-vertical-line"></span>
               </span>
@@ -776,10 +788,7 @@ const SidebarSmall = (props) => {
 
       {/* Reconciliation  */}
       <div className="sidebarSmallImg">
-        <Link
-          to="/cms-configuration"
-          className={activeLink("/cms-configuration")}
-        >
+        <Link to="/">
           <span className="sidebarIconSize icon-Reconciliation">
             {/* icon-Configuration  Small Icon */}
           </span>
@@ -914,9 +923,11 @@ const SidebarSmall = (props) => {
           overlay={cardManagementPopover}
           rootClose
         >
-          <span className="sidebarIconSize icon-Pass-Management">
-            {/* icon-card-management Small Icon */}
-          </span>
+          <div className={activeLink("/pass-management")}>
+            <span className="sidebarIconSize icon-Pass-Management">
+              {/* icon-card-management Small Icon */}
+            </span>
+          </div>
         </OverlayTrigger>
       </div>
 

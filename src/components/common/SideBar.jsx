@@ -19,6 +19,11 @@ const SideBar = (props) => {
   if (reportPath) {
     reportPath = reportPath.pathnameBase;
   }
+  // pass management Path
+  let passManagementPath = matchPath("/pass-management/*", path);
+  if (passManagementPath) {
+    passManagementPath = passManagementPath.pathnameBase;
+  }
 
   // route Re-Direct
   useEffect(() => {
@@ -44,6 +49,9 @@ const SideBar = (props) => {
     }
     if (arr === reportPath) {
       return "accordion-button";
+    }
+    if (arr === passManagementPath) {
+      return "accordion-button";
     } else {
       return "accordion-button collapsed";
     }
@@ -57,6 +65,9 @@ const SideBar = (props) => {
     }
     if (arr === reportPath) {
       return "true";
+    }
+    if (arr === passManagementPath) {
+      return "true";
     } else {
       return "false";
     }
@@ -69,6 +80,9 @@ const SideBar = (props) => {
       return "accordion-collapse collapse show";
     }
     if (arr === reportPath) {
+      return "accordion-collapse collapse show";
+    }
+    if (arr === passManagementPath) {
       return "accordion-collapse collapse show";
     } else {
       return "accordion-collapse collapse ";
@@ -825,11 +839,11 @@ const SideBar = (props) => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingPassManagement">
             <button
-              className={activeBtnClass("/loan")}
+              className={activeBtnClass("/pass-management")}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapsePassManagement"
-              aria-expanded={activeAriaExpand("/loan")}
+              aria-expanded={activeAriaExpand("/pass-management")}
               aria-controls="collapsePassManagement"
             >
               <span className="sidebarIconSize icon-Pass-Management"></span>
@@ -838,14 +852,17 @@ const SideBar = (props) => {
           </h2>
           <div
             id="collapsePassManagement"
-            className={activeAccordionBodyClass("/loan")}
+            className={activeAccordionBodyClass("/pass-management")}
             aria-labelledby="headingPassManagement"
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body">
               <ul className="subMenu">
                 <li>
-                  <Link to="/dummy-text">
+                  <Link
+                    to="/pass-management/issue-pass"
+                    className={activeLink("/pass-management/issue-pass")}
+                  >
                     <span className="subMenuLeft">
                       <span className="icon-vertical-line"></span>
                     </span>

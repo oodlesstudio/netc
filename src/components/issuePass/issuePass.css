@@ -1,0 +1,531 @@
+/* Alert */
+.ticketCenterSection .alert-warning {
+    background-color: var(--alert-bg);
+    border: 1px solid var(--alert-border);
+    border-radius: 8px;
+    font-size: var(--font-size14);
+    color: #000;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.ticketCenterSection .alert-warning strong {
+    font-weight: 600;
+}
+
+.ticketCenterSection .alert-dismissible .btn-close {
+    padding: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 6px;
+}
+
+/* Search Criteria */
+.searchCriteriaBox {
+    margin-bottom: 12px;
+}
+
+/* Summary */
+.summaryRed {
+    color: #c54031 !important;
+}
+
+.summaryBlue {
+    color: #00b6ef !important;
+}
+
+.summaryYellow {
+    color: #e4b830 !important;
+}
+
+.summaryRow {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.summaryRow .summaryTableBox:first-child {
+    width: 272px;
+}
+
+.summaryRow .summaryTableBox:nth-child(2) {
+    width: 537px;
+    margin-left: 6px;
+}
+
+.summaryRow .summaryTableBox:last-child {
+    width: 495px;
+    margin-left: 6px;
+}
+
+.summaryTableBox {
+    background-color: var(--border-box-bg);
+    border: 1px solid var(--color-border-default);
+    border-radius: 8px;
+    padding: 12px 0 12px 9px;
+    margin-bottom: 12px;
+}
+
+.summaryTableBox .table {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.summaryContentLeft thead th,
+.summaryContentLeft tbody td,
+.summaryContentCenter thead th,
+.summaryContentCenter tbody td {
+    font-weight: 400;
+    font-size: var(--font-size10);
+    color: #000;
+    padding: 0;
+    width: 25%;
+    text-align: center;
+}
+
+.summaryContentLeft tbody td,
+.summaryContentCenter tbody td {
+    font-weight: 600;
+    font-size: var(--font-size12);
+    padding-top: 4px;
+}
+
+.summaryContentCenter thead th,
+.summaryContentCenter tbody td {
+    width: auto;
+}
+
+.tableContentBox .form-check {
+    min-height: inherit;
+    margin-bottom: 0;
+}
+
+.tableContentBox .form-check-input {
+    margin-top: 0;
+    margin-right: 12px;
+}
+
+.tableContentBox .form-check-input:checked {
+    background-color: var(--color-primary-default);
+    border-color: var(--color-primary-default);
+}
+
+.circleNo {
+    border-bottom: 12px dotted #e4b830;
+    width: 12px;
+    height: 12px;
+    margin-right: 9px;
+}
+
+.ticketIdBox {
+    width: 21px;
+    height: 21px;
+    border-radius: 4px;
+    background-color: rgba(16, 157, 74, 0.1);
+    font-weight: 700;
+    font-size: var(--font-size12);
+    color: #109d49;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atmIdBox {
+    width: 21px;
+    height: 21px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 10%);
+    font-weight: 700;
+    font-size: var(--font-size12);
+    color: #000;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.callTypeBox {
+    color: #c54031 !important;
+}
+
+.editYellowBox {
+    background: #fff9d7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+}
+
+.addToWorkList {
+    width: 175px;
+    margin-left: 6px;
+}
+
+.ticketCentreTableHeader .btnPrimary,
+.ticketCentreTableHeader .btnPrimaryOutline {
+    width: 70px;
+}
+
+.lightPinkNestedTable {
+    background-color: var(--color-secondary-light-defaut) !important;
+}
+
+.closeNestedTableButton {
+    width: 12px;
+    height: 12px;
+    background-color: #e4b830;
+    border-radius: 50px;
+    margin-left: 9px;
+}
+
+.icon-Icon-2 {
+    color: #fff !important;
+}
+
+.OpenNestedTableButton {
+    width: 12px;
+    height: 12px;
+    background-color: #109d49;
+    border-radius: 50px;
+    margin-left: 9px;
+}
+
+.icon-Action-Icons:before {
+    color: #fff !important;
+}
+
+.circleNoTwo {
+    border-color: #c54031;
+}
+
+.circleNoThree {
+    border-color: #424f66;
+}
+
+.circleNoFour {
+    border-color: #e933a7;
+}
+
+.circleNoFive {
+    border-color: #109D49;
+}
+
+.circleNoSix {
+    border-color: #00B6EF;
+}
+
+.circleNoSeven {
+    border-color: #C54031;
+    color: #fff;
+}
+
+
+
+
+/* new Css by a */
+
+
+.identificationContainer .accordion-body .configSelectBoxTop .col-Criteria {
+    flex: inherit;
+    padding: 0 6px;
+    width: 20%;
+    margin-top: 12px;
+}
+
+
+.searchCriteriaBox2 .configTopBlueBox {
+    min-height: initial;
+}
+
+
+.summaryRow .summaryTableBox.summaryTableBox2 {
+    width: 272px;
+    margin-left: 0px;
+}
+
+.summaryRow .summaryTableBox.summaryTableBox2:not(:last-child) {
+    margin-right: 6px;
+}
+
+
+.tableBorderBox .table.table-striped.transfer-money {
+    width: 100%;
+}
+
+.tableBorderBox .table.table-striped.transfer-money-2 {
+    width: 100%;
+}
+
+
+/* Transfer Money CSS */
+
+.remitter-Search {
+    border-radius: 8px;
+    background-color: var(--color-light-blue);
+    border: 1px solid var(--color-border-default);
+    padding: 12px;
+}
+
+.remitter-SearchField {
+    display: flex;
+    align-items: center;
+}
+
+
+.has-search.hasRemitter-Search .form-control {
+    width: 220px;
+    height: 32px;
+    border-color: var(--color-border-default);
+    padding-left: 12px;
+    font-family: "Inter";
+    font-size: var(--font-size14);
+    letter-spacing: 0.02em;
+    color: var(--color-black);
+    background-color: var(--background-white);
+}
+
+
+.remitterText {
+    font-size: var(--font-size14);
+    color: var(--color-black);
+}
+
+.remitterText~span {
+    font-size: var(--font-size14);
+    color: var(--color-primary-default);
+    text-decoration: underline;
+    font-weight: var(--font-weight-500);
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.BeneficiaryHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.BeneficiaryHeader h5 {
+    font-size: var(--font-size18);
+    font-weight: var(--font-weight-600);
+    color: var(--color-black);
+}
+
+.beneficiaryBtn {
+    background-color: transparent;
+    border: 1px solid var(--color-primary-default);
+    border-radius: 4px;
+    width: 140px;
+    height: 32px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: var(--font-size14);
+    color: var(--color-primary-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.act-delete-Btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: var(--color-secondary-light-defaut);
+    border: 1px solid var(--delete-box-border);
+}
+
+.act-transfer-Btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: var(--color-green-box);
+    border: 1px solid var(--delete-box-border);
+    margin-left: 6px;
+}
+
+.btnPrimaryOutline.issueBtn,
+.btnPrimary.issueBtn {
+    width: 150px;
+}
+
+
+.has-search:first-child {
+    margin-right: 6px;
+}
+
+
+@media(max-width:768px) {
+    .summaryRow.summaryRow2 {
+        flex-wrap: wrap;
+    }
+
+    .summaryRow .summaryTableBox.summaryTableBox2 {
+        width: 230px;
+        margin-left: 0px;
+    }
+
+    .identificationContainer .accordion-body .configSelectBoxTop .col-Criteria {
+        flex: inherit;
+        padding: 0 6px;
+        width: 33%;
+        margin-top: 12px;
+    }
+
+    .tableBorderBox .table.table-striped.transfer-money {
+        width: 1000px;
+    }
+
+    .tableBorderBox .table.table-striped.transfer-money-2 {
+        width: 1000px;
+    }
+
+
+
+}
+
+@media(max-width:767px) {
+
+    /* new issue Css */
+    .has-search.hasRemitter-Search .form-control {
+        width: 24vw;
+    }
+}
+
+@media(max-width:615px) {
+
+    /* new issue Css */
+    .has-search.hasRemitter-Search .form-control {
+        width: 100%;
+    }
+
+
+}
+
+
+@media(max-width:425px) {
+    .summaryRow.summaryRow2 {
+        flex-wrap: wrap;
+    }
+
+    .summaryRow .summaryTableBox.summaryTableBox2 {
+        width: 327px;
+        margin-left: 0px;
+    }
+
+    .identificationContainer .accordion-body .configSelectBoxTop .col-Criteria {
+        flex: inherit;
+        padding: 0 6px;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .summaryRow {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .remitter-SearchField {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .has-search.hasRemitter-Search .form-control {
+        width: 100%;
+
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    .searchFieldsBtns {
+        margin-top: 12px;
+    }
+
+    .notFoundLink {
+        text-align: center;
+    }
+
+    .has-search:first-child {
+        margin-right: 0px;
+        margin-bottom: 12px;
+    }
+
+    .issueBtns {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .issueBtns button {
+        margin-left: 0px !important;
+        width: 100% !important;
+    }
+
+    .issueBtns button:first-child {
+        margin-bottom: 12px;
+    }
+}
+
+
+.addbeneIcon {
+    font-size: 18px;
+}
+
+
+/* Box css */
+.configSelectBoxTop2 .clientNameSelect {
+    margin-bottom: 12px;
+}
+
+.configSelectBoxTop {
+    margin-top: 8px;
+    padding: 0 6px;
+}
+
+
+
+.concRegistrationgrid .col {
+    width: 25%;
+    padding: 0 6px;
+    margin-bottom: 12px;
+}
+
+
+
+.concBoxTittle {
+    font-style: normal;
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size16);
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    margin-top: 10px;
+    color: var(--color-black);
+}
+
+
+@media(max-width:768px) {
+
+    .concRegistrationgrid .col {
+        width: 33.33%;
+        padding: 0 6px;
+        margin-bottom: 12px;
+    }
+
+}
+
+@media(max-width:500px) {
+
+
+    .concRegistrationgrid .col {
+        width: 100%;
+        padding: 0 6px;
+        margin-bottom: 12px;
+    }
+
+}
+
+/*  */
