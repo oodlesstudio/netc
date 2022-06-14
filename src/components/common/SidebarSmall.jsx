@@ -59,6 +59,14 @@ const SidebarSmall = (props) => {
               <span className="subMenuLeft">
                 <span className="icon-vertical-line"></span>
               </span>
+              <span className="subMenuRight">Toll Exception List</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <span className="subMenuLeft">
+                <span className="icon-vertical-line"></span>
+              </span>
               <span className="subMenuRight">MTD Txn Summary VC Wise</span>
             </Link>
           </li>

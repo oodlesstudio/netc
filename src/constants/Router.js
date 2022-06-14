@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ConcessionaireRegistration from "../pages/ConcessionaireRegistration";
 import TransactionReport from "../pages/TransactionReport";
 import IssuePass from "../pages/IssuePass";
+import TollExceptionList from "../pages/TollExceptionList";
 
 const router = () => {
   return (
@@ -14,6 +15,7 @@ const router = () => {
         <Route path="/concessionaire-management/registration" element={<ConcessionaireRegistration />} />
         <Route path="/report/transaction-report" element={<TransactionReport />} />
         <Route path="/pass-management/issue-pass" element={<IssuePass />} />
+        <Route path="/dashboard/toll-exception-list" element={<TollExceptionList />} />
       </Routes>
     </BrowserRouter>
   );

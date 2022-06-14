@@ -8,6 +8,11 @@ const SideBar = (props) => {
   let path = useLocation().pathname;
   let navigate = useNavigate();
 
+  // DashBoard Management Path
+  let dashBoardPath = matchPath("/dashboard/*", path);
+  if (dashBoardPath) {
+    dashBoardPath = dashBoardPath.pathnameBase;
+  }
   // Concessionaire Management Path
   let concManagementPath = matchPath("/concessionaire-management/*", path);
   if (concManagementPath) {
@@ -52,6 +57,9 @@ const SideBar = (props) => {
     }
     if (arr === passManagementPath) {
       return "accordion-button";
+    }
+    if (arr === dashBoardPath) {
+      return "accordion-button";
     } else {
       return "accordion-button collapsed";
     }
@@ -68,6 +76,9 @@ const SideBar = (props) => {
     }
     if (arr === passManagementPath) {
       return "true";
+    }
+    if (arr === dashBoardPath) {
+      return "true";
     } else {
       return "false";
     }
@@ -83,6 +94,9 @@ const SideBar = (props) => {
       return "accordion-collapse collapse show";
     }
     if (arr === passManagementPath) {
+      return "accordion-collapse collapse show";
+    }
+    if (arr === dashBoardPath) {
       return "accordion-collapse collapse show";
     } else {
       return "accordion-collapse collapse ";
@@ -124,11 +138,11 @@ const SideBar = (props) => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingDashboard">
             <button
-              className={activeBtnClass("/dummy-text")}
+              className={activeBtnClass("/dashboard")}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseDashboard"
-              aria-expanded={activeAriaExpand("/dummy-text")}
+              aria-expanded={activeAriaExpand("/dashboard")}
               aria-controls="collapseDashboard"
             >
               <span className="sidebarIconSize icon-Dashboard"></span>
@@ -137,7 +151,7 @@ const SideBar = (props) => {
           </h2>
           <div
             id="collapseDashboard"
-            className={activeAccordionBodyClass("/dummy-text")}
+            className={activeAccordionBodyClass("/dashboard")}
             aria-labelledby="headingDashboard"
             data-bs-parent="#accordionExample"
           >
@@ -149,6 +163,17 @@ const SideBar = (props) => {
                       <span className="icon-vertical-line"></span>
                     </span>
                     <span className="subMenuRight">Maximus Home</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/dashboard/toll-exception-list"
+                    className={activeLink("/dashboard/toll-exception-list")}
+                  >
+                    <span className="subMenuLeft">
+                      <span className="icon-vertical-line"></span>
+                    </span>
+                    <span className="subMenuRight">Toll Exception List</span>
                   </Link>
                 </li>
                 <li>

@@ -109,6 +109,7 @@ a {
   --light-yellow-bg: #fff9d7;
   --popover-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
   --delete-box-border:rgba(0, 0, 0, 0.1);
+  --capture-btn-color: #109D49;
 
   --alert-bg: #FFF9D7;
   --alert-border: rgba(0, 0, 0, 0.1);
@@ -146,6 +147,7 @@ a {
   --popover-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
   --delete-box-border: rgba(0, 0, 0, 0.1);
   --light-pink-bg: hsla(5, 85%, 90%, .4);
+  --capture-btn-color: #109D49;
 }
 [data-theme="dark"] {
   /* Colors Dark Theme */
@@ -181,6 +183,7 @@ a {
   --popover-box-shadow: 0px 4px 24px rgba(0, 0, 0, 1);
   --delete-box-border: rgba(0, 0, 0, 0.1);
   --light-pink-bg: rgba(75, 24, 19, .4);
+  --capture-btn-color: #17E56B;
 }
 
 /* Font Sizes */

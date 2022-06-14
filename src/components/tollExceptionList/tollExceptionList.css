@@ -1,0 +1,360 @@
+.TollExceptionWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.exceptionBox {
+    /* min-height: 152px; */
+    height: 152px;
+    width: 100%;
+    background: var(--background-white);
+    border: 1px solid var(--color-border-default);
+    border-radius: 8px;
+}
+
+.exceptionBox.piechart {
+    /* min-height: 152px; */
+    height: 152px;
+    width: 40%;
+    background: var(--background-white);
+    border: 1px solid var(--color-border-default);
+    border-radius: 8px;
+}
+
+.exceptionBox.smalltable {
+    max-height: 152px;
+    width: 60%;
+    background: var(--background-white);
+    border: 1px solid var(--color-border-default);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.exceptionBox.smalltable .table {
+    width: 100%;
+}
+
+.smalltable .tableContentBox {
+    max-height: 150px;
+}
+
+.exceptionCodeWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.exceptionCode {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.exceptionCode.pink {
+    background-color: #FFADAD;
+}
+
+.exceptionCode.green {
+    background-color: #91C48F;
+}
+
+.exceptionCode.yellow {
+    background-color: #F2D477;
+}
+
+
+.totalTagIdText {
+    font-style: normal;
+    font-size: var(--font-size14) !important;
+    font-weight: var(--font-weight-500) !important;
+    font-size: var(--font-size14) !important;
+    color: var(--color-primary-default) !important;
+}
+
+
+
+/* Double Table */
+
+.doubleTable {
+    margin-top: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+
+
+.doubleTable .table {
+    width: 100%;
+}
+
+
+.table-bottom-border {
+    border-bottom: 1px solid var(--color-light-blue) !important;
+}
+
+.table-left-border {
+    border-left: 1px solid var(--color-light-blue) !important;
+}
+
+.table-right-border {
+    border-right: 1px solid var(--color-light-blue) !important;
+}
+
+.table-top-border {
+    border-top: 1px solid var(--color-light-blue) !important;
+}
+
+
+.statusSuccessText {
+    font-style: normal;
+    font-weight: var(--font-weight-500) !important;
+    font-size: var(--font-size14) !important;
+    color: var(--capture-btn-color) !important;
+}
+
+.exceptionCodeBox {
+    width: 40px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black) !important;
+}
+
+.exceptionCodeBox.yellow {
+    background: #F2D477;
+}
+
+.exceptionCodeBox.green {
+    background: #91C48F;
+}
+
+.exceptionCodeBox.pink {
+    background: #FFADAD;
+}
+
+
+
+/* #SvgjsText1018{
+
+} */
+
+.apexcharts-datalabels-group .apexcharts-datalabel-label {
+    font-weight: 400 !important;
+    font-size: var(--font-size14) !important;
+    fill: var(--color-black) !important;
+    font-family: "Inter" !important;
+}
+
+.apexcharts-datalabels-group .apexcharts-datalabel-value {
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    fill: var(--color-black) !important;
+    font-family: "Inter" !important;
+    transform: translateY(-5px);
+}
+
+.apexcharts-legend-text {
+    color: var(--color-black) !important;
+    font-size: var(--font-size14) !important;
+}
+
+.apx-legend-position-right {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+
+.HeaderDouble {
+    min-height: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.HeaderDoubleHeading {
+    font-weight: 500;
+    font-size: var(--font-size16);
+
+    color: var(--color-black);
+}
+
+.HeaderSubDouble {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tollDateWrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tollDate {
+    width: 156px;
+}
+
+.tollStatus {
+    width: 184px;
+}
+
+@media(max-width:1200px) {
+    .TollExceptionWrapper {
+        flex-direction: column;
+    }
+
+    .exceptionBox.piechart {
+        /* min-height: 152px; */
+        width: 100%;
+
+    }
+
+    .exceptionBox.smalltable {
+        max-height: 152px;
+        width: 100%;
+    }
+
+    .apx-legend-position-right {
+        right: 23vw !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
+}
+
+@media(max-width:767px) {
+    .HeaderDouble {
+        flex-direction: column;
+        align-items: self-start;
+        gap: 12px;
+    }
+
+    .exceptionBox.smalltable .table {
+        width: 800px;
+    }
+
+    .doubleTable .table {
+        width: 800px;
+    }
+
+    .apx-legend-position-right {
+        right: 6vw !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
+
+    .smalltable .tableContentBox {
+        max-height: 135px;
+    }
+
+}
+
+
+@media(max-width:560px) {
+
+    .apx-legend-position-right {
+        right: 4vw !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
+
+
+    .HeaderSubDouble {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tollDateWrapper {
+        width: 100%;
+    }
+
+    .tollDate {
+        width: 100%;
+    }
+
+    .tollStatus {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .apx-legend-position-right {
+        right: 4vw !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
+}
+
+
+@media(max-width:395px) {
+
+    .exceptionBox.piechart {
+        height: 136px;
+        width: 100%;
+    }
+
+}
+
+@media(max-width:374px) {
+    .apx-legend-position-right {
+        right: initial;
+        top: initial;
+        transform: translateY(-50%) !important;
+    }
+}
+
+@media(max-width:370px) {
+
+    .exceptionBox.piechart {
+        height: 100%;
+        width: 100%;
+        min-height: 136px;
+    }
+}
+
+@media(max-width:355px) {
+
+    .apx-legend-position-right {
+        right: 12vw !important;
+        top: 50% !important;
+    }
+}
+
+
+
+
+/* Table Media Queries */
+
+@media(max-width:374px){
+
+        .exceptionBox.smalltable .table {
+                width: 530px;
+            }
+        
+            .doubleTable .table {
+                width: 900px;
+            }
+}
+
+@media(min-width:375px) and (max-width:500px){
+
+        .exceptionBox.smalltable .table {
+                width: 650px;
+            }
+        
+            .doubleTable .table {
+                width: 1100px;
+            }
+}
