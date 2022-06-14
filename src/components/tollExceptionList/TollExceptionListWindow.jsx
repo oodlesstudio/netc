@@ -6,12 +6,14 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 const TollExceptionListWindow = () => {
+  window.dispatchEvent(new Event("resize"));
+
   const options = {
-    // chart: {
-    //   height: "100%",
-    //   width: "100%",
-    // },
-    series: [10, 10, 10],
+    chart: {
+      height: "100%",
+      width: "100%",
+      type: "donut",
+    },
     labels: ["Low Balance", "Exempted Vehicle Class", "Black List"],
     dataLabels: {
       enabled: false,
@@ -34,6 +36,15 @@ const TollExceptionListWindow = () => {
       },
     },
     responsive: [
+      // {
+      //   breakpoint: 370,
+      //   options: {
+      //     chart: {
+      //       height: 330,
+      //       width: 330,
+      //     },
+      //   },
+      // },
       {
         breakpoint: 350,
         options: {

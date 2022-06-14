@@ -313,15 +313,20 @@
         top: initial;
         transform: translateY(-50%) !important;
     }
+
+    .apx-legend-position-right {
+        height: 90px !important;
+    }
 }
 
-@media(max-width:370px) {
+@media(max-width:350px) {
 
     .exceptionBox.piechart {
         height: 100%;
         width: 100%;
         min-height: 136px;
     }
+
 }
 
 @media(max-width:355px) {
@@ -337,24 +342,24 @@
 
 /* Table Media Queries */
 
-@media(max-width:374px){
+@media(max-width:374px) {
 
-        .exceptionBox.smalltable .table {
-                width: 530px;
-            }
-        
-            .doubleTable .table {
-                width: 900px;
-            }
+    .exceptionBox.smalltable .table {
+        width: 530px;
+    }
+
+    .doubleTable .table {
+        width: 900px;
+    }
 }
 
-@media(min-width:375px) and (max-width:500px){
+@media(min-width:375px) and (max-width:500px) {
 
-        .exceptionBox.smalltable .table {
-                width: 650px;
-            }
-        
-            .doubleTable .table {
-                width: 1100px;
-            }
+    .exceptionBox.smalltable .table {
+        width: 650px;
+    }
+
+    .doubleTable .table {
+        width: 1100px;
+    }
 }
