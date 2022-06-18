@@ -117,14 +117,14 @@ const IssuePassWindow = () => {
               >
                 {/* Search Field And Buttons */}
                 <div className="remitter-SearchField full-width">
-                  <div className="form-group has-search hasRemitter-Search full-width">
+                  <div className="form-group has-search hasPass-Search full-width">
                     <input
                       type="text"
                       className="form-control"
                       placeholder="MH456797654"
                     />
                   </div>
-                  <div className="form-group has-search hasRemitter-Search full-width">
+                  <div className="form-group has-search hasPass-Search full-width">
                     <input
                       type="text"
                       className="form-control"
