@@ -356,6 +356,28 @@
 }
 
 
+
+@media(max-width:1350px){
+
+    .tableBorderBox .table.table-striped.transfer-money {
+            width: 1400px;
+        }
+}
+
+@media(max-width:1200px){
+
+    .tableBorderBox .table.table-striped.transfer-money {
+            width: 1300px;
+        }
+}
+
+@media(max-width:900px){
+
+    .tableBorderBox .table.table-striped.transfer-money {
+            width: 1200px;
+        }
+}
+
 @media(max-width:768px) {
     .summaryRow.summaryRow2 {
         flex-wrap: wrap;
