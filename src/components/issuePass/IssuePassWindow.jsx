@@ -152,8 +152,8 @@ const IssuePassWindow = () => {
                 <div class="hrGreyLine"></div>
                 <div className="tableBorderBox mt-3 px-0">
                   {/* Table */}
-                  <div className="table-responsive tableContentBox">
-                    <table className="table transfer-money table-striped table-borderless align-middle mb-0">
+                  <div className="table-responsive tableContentBox issue-pass">
+                    <table className="table table-striped table-borderless align-middle mb-0">
                       <thead>
                         <tr>
                           <th scope="col"></th>

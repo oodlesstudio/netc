@@ -409,11 +409,11 @@ const TransactionReportWindow = () => {
           </div>
 
           {/* Table */}
-          <div className="table-responsive tableContentBox ticketCentreTableResponsive">
+          <div className="table-responsive tableContentBox transactionReport">
             <table className="table table-striped table-hover table-borderless align-middle mb-0">
               <thead>
                 <tr>
-                  <th scope="col">
+                  <th scope="col" className="p-0">
                     Msg ID
                     <Link to="/">
                       <span className="icon-Sort-icon"></span>
@@ -483,7 +483,7 @@ const TransactionReportWindow = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td>
+                  <td className="p-0">
                     <div className="d-flex align-items-center justify-content-center">
                       712678678934
                       <div
@@ -633,7 +633,28 @@ const TransactionReportWindow = () => {
                 </tr>
                 {/* Rpeated Fields */}
                 <tr>
-                  <td>
+                  <td className="p-0">
+                    <div className="d-flex align-items-center justify-content-center ">
+                      712678678934
+                      <div className="tableToggle">
+                        <span className="icon-Icon-2"></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>4567896789655337383</td>
+
+                  <td>5767895</td>
+                  <td>Kundaali Plaza</td>
+                  <td>18-02-2022, 10:40 AM</td>
+                  <td>18-02-2022, 10:40 AM</td>
+                  <td>lAN23</td>
+                  <td>lAN23</td>
+                  <td>23455</td>
+                  <td>Toll Plaza</td>
+                  <td>Fare Amount</td>
+                </tr>
+                <tr>
+                  <td className="p-0">
                     <div className="d-flex align-items-center justify-content-center">
                       712678678934
                       <div className="tableToggle">
@@ -654,7 +675,7 @@ const TransactionReportWindow = () => {
                   <td>Fare Amount</td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="p-0">
                     <div className="d-flex align-items-center justify-content-center">
                       712678678934
                       <div className="tableToggle">
@@ -675,28 +696,7 @@ const TransactionReportWindow = () => {
                   <td>Fare Amount</td>
                 </tr>
                 <tr>
-                  <td>
-                    <div className="d-flex align-items-center justify-content-center">
-                      712678678934
-                      <div className="tableToggle">
-                        <span className="icon-Icon-2"></span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>4567896789655337383</td>
-
-                  <td>5767895</td>
-                  <td>Kundaali Plaza</td>
-                  <td>18-02-2022, 10:40 AM</td>
-                  <td>18-02-2022, 10:40 AM</td>
-                  <td>lAN23</td>
-                  <td>lAN23</td>
-                  <td>23455</td>
-                  <td>Toll Plaza</td>
-                  <td>Fare Amount</td>
-                </tr>
-                <tr>
-                  <td>
+                  <td className="p-0">
                     <div className="d-flex align-items-center justify-content-center">
                       712678678934
                       <div className="tableToggle">
