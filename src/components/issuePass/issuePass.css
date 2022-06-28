@@ -112,24 +112,25 @@
 }
 
 
-@media(max-width:1350px) {
+
+@media(max-width:1250px) {
 
     .tableBorderBox .issue-pass .table {
-        width: 1400px;
+        width: 1000px;
     }
 }
 
 @media(max-width:1200px) {
 
     .tableBorderBox .issue-pass .table {
-        width: 1300px;
+        width: 1000px;
     }
 }
 
 @media(max-width:900px) {
 
     .tableBorderBox .issue-pass .table{
-        width: 1200px;
+        width: 1000px;
     }
 }
 
